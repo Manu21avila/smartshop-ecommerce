@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartShop | Sua Loja Inteligente</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/products.js"></script>
+    <script defer src="js/cart.js"></script>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <h1>🛍️ SmartShop</h1>
+
+      <div class="search-cart">
+        <input type="text" id="searchInput" placeholder="Buscar produto..." />
+        <a href="cart.html" class="cart-btn">
+          🛒 Carrinho <span id="cartCount">0</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- FILTROS -->
+    <section class="filters">
+      <select id="categoryFilter">
+        <option value="all">Todas Categorias</option>
+        <option value="eletronicos">Eletrônicos</option>
+        <option value="moda">Moda</option>
+        <option value="acessorios">Acessórios</option>
+      </select>
+
+      <select id="sortFilter">
+        <option value="default">Ordenar por</option>
+        <option value="price-asc">Menor Preço</option>
+        <option value="price-desc">Maior Preço</option>
+      </select>
+    </section>
+
+    <!-- PRODUTOS -->
+    <main class="products-container" id="productsContainer">
+      <!-- Produtos serão inseridos via JavaScript -->
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p>© 2026 SmartShop - Projeto de Portfólio por Emanuelle Ávila</p>
+    </footer>
+  </body>
+</html>

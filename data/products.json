@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Smartphone Pro X",
+    "price": 2499.9,
+    "category": "eletronicos",
+    "stock": 10,
+    "image": "https://via.placeholder.com/300x200",
+    "promotion": true
+  },
+  {
+    "id": 2,
+    "name": "Notebook Ultra Slim",
+    "price": 4599.9,
+    "category": "eletronicos",
+    "stock": 5,
+    "image": "https://via.placeholder.com/300x200",
+    "promotion": false
+  },
+  {
+    "id": 3,
+    "name": "Tênis Casual Premium",
+    "price": 299.9,
+    "category": "moda",
+    "stock": 20,
+    "image": "https://via.placeholder.com/300x200",
+    "promotion": true
+  },
+  {
+    "id": 4,
+    "name": "Relógio Smartwatch",
+    "price": 799.9,
+    "category": "acessorios",
+    "stock": 8,
+    "image": "https://via.placeholder.com/300x200",
+    "promotion": false
+  }
+]

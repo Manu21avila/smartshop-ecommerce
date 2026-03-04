@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SmartShop | Carrinho</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/cart-page.js"></script>
+  </head>
+
+  <body>
+    <header class="header">
+      <h1>🛍️ SmartShop</h1>
+      <a href="index.html" class="cart-btn">← Voltar para loja</a>
+    </header>
+
+    <main class="cart-container">
+      <h2>Seu Carrinho</h2>
+
+      <div id="cartItems"></div>
+
+      <div class="cart-summary">
+        <p>Subtotal: <span id="subtotal">R$ 0.00</span></p>
+        <p>Frete: <span id="shipping">R$ 15.00</span></p>
+        <h3>Total: <span id="total">R$ 0.00</span></h3>
+
+        <input type="text" id="couponInput" placeholder="Cupom de desconto" />
+        <button onclick="applyCoupon()">Aplicar Cupom</button>
+
+        <button class="checkout-btn">Finalizar Compra</button>
+      </div>
+    </main>
+  </body>
+</html>
