@@ -5,7 +5,7 @@
     "price": 2499.9,
     "category": "eletronicos",
     "stock": 10,
-    "image": "https://via.placeholder.com/300x200",
+    "image": "https://picsum.photos/300/200",
     "promotion": true
   },
   {
@@ -14,7 +14,7 @@
     "price": 4599.9,
     "category": "eletronicos",
     "stock": 5,
-    "image": "https://via.placeholder.com/300x200",
+    "image": "https://picsum.photos/300/200",
     "promotion": false
   },
   {
@@ -23,7 +23,7 @@
     "price": 299.9,
     "category": "moda",
     "stock": 20,
-    "image": "https://via.placeholder.com/300x200",
+    "image": "https://picsum.photos/300/200",
     "promotion": true
   },
   {
@@ -32,7 +32,7 @@
     "price": 799.9,
     "category": "acessorios",
     "stock": 8,
-    "image": "https://via.placeholder.com/300x200",
+    "image": "https://picsum.photos/300/200",
     "promotion": false
   }
 ]
