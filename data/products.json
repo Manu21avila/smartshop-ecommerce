@@ -18,6 +18,7 @@
     "image": "images/notebook.png",
     "promotion": false
   },
+
   {
     "id": 3,
     "name": "Tênis Casual Premium",
@@ -27,6 +28,7 @@
     "image": "images/tenis.png",
     "promotion": true
   },
+
   {
     "id": 4,
     "name": "Relógio Smartwatch",
