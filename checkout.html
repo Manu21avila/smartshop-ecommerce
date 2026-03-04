@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkout - SmartShop</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/checkout.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Finalizar Compra</h1>
+    </header>
+
+    <main class="checkout-container">
+      <form id="checkoutForm">
+        <input type="text" placeholder="Nome Completo" required />
+        <input type="text" placeholder="Endereço" required />
+        <input type="text" placeholder="Telefone" required />
+
+        <select required>
+          <option value="">Forma de Pagamento</option>
+          <option>Cartão</option>
+          <option>Pix</option>
+          <option>Boleto</option>
+        </select>
+
+        <button type="submit">Confirmar Pedido</button>
+      </form>
+    </main>
+  </body>
+</html>

@@ -1,11 +1,11 @@
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let orders = JSON.parse(localStorage.getItem("orders")) || [];
 
 function calculateMetrics() {
   let totalRevenue = 0;
   let totalSales = 0;
   let productCount = {};
 
-  cart.forEach(item => {
+  cart.forEach((item) => {
     totalRevenue += item.price * item.quantity;
     totalSales += item.quantity;
 
@@ -40,18 +40,20 @@ function createChart(productCount) {
   const ctx = document.getElementById("salesChart");
 
   new Chart(ctx, {
-    type: "bar",
+    type: "line",
     data: {
       labels: Object.keys(productCount),
-      datasets: [{
-        label: "Quantidade Vendida",
-        data: Object.values(productCount),
-        borderWidth: 1
-      }]
+      datasets: [
+        {
+          label: "Quantidade Vendida",
+          data: Object.values(productCount),
+          borderWidth: 1,
+        },
+      ],
     },
     options: {
-      responsive: true
-    }
+      responsive: true,
+    },
   });
 }
 
