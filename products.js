@@ -5,6 +5,17 @@ const sortFilter = document.getElementById("sortFilter");
 
 let products = [];
 
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  localStorage.setItem("theme", document.body.classList.contains("dark"));
+});
+
+if (localStorage.getItem("theme") === "true") {
+  document.body.classList.add("dark");
+}
+
 // Carregar produtos do JSON
 async function loadProducts() {
   const response = await fetch("data/products.json");
@@ -69,3 +80,9 @@ sortFilter.addEventListener("change", () => {
 
 // Inicializar
 loadProducts();
+
+card.classList.add("product-card", "fade-in");
+
+card.addEventListener("click", () => {
+  window.location.href = `product.html?id=${product.id}`;
+});

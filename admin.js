@@ -58,3 +58,18 @@ function createChart(productCount) {
 }
 
 calculateMetrics();
+
+const toggle = document.getElementById("themeToggle");
+
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+  localStorage.setItem("theme", document.body.classList.contains("dark"));
+});
+
+if (localStorage.getItem("theme") === "true") {
+  document.body.classList.add("dark");
+}
+
+document.getElementById("menuToggle").addEventListener("click", () => {
+  document.querySelector(".search-cart").classList.toggle("active");
+});
