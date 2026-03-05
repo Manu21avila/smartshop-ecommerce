@@ -81,8 +81,23 @@ sortFilter.addEventListener("change", () => {
 // Inicializar
 loadProducts();
 
-card.classList.add("product-card", "fade-in");
+function displayProducts(productsList) {
+  productsContainer.innerHTML = "";
 
-card.addEventListener("click", () => {
-  window.location.href = `product.html?id=${product.id}`;
-});
+  productsList.forEach((product) => {
+    const card = document.createElement("div");
+    card.classList.add("product-card", "fade-in");
+
+    card.innerHTML = `
+      ${product.promotion ? "<span class='badge'>Promoção</span>" : ""}
+      <img src="${product.image}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>R$ ${product.price.toFixed(2)}</p>
+      <button onclick="addToCart(${product.id})" ${product.stock === 0 ? "disabled" : ""}>
+        ${product.stock === 0 ? "Indisponível" : "Adicionar ao Carrinho"}
+      </button>
+    `;
+
+    productsContainer.appendChild(card);
+  });
+}
