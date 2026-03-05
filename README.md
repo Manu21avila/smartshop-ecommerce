@@ -1,21 +1,37 @@
-# 🛍 SmartShop - Mini E-commerce com Dashboard
+# SmartShop 🛍️
 
-Projeto completo de e-commerce desenvolvido com HTML, CSS e JavaScript puro.
+Projeto de mini e-commerce desenvolvido para portfólio.
 
-## 🚀 Funcionalidades
-- Listagem dinâmica via JSON
-- Filtros por categoria
-- Ordenação por preço
-- Carrinho persistente (localStorage)
-- Checkout com registro de pedidos
-- Dashboard administrativo com métricas
+## Tecnologias
 
-## 🌐 Deploy
-https://manu21avila.github.io/smartshop-ecommerce/
-
-## 🛠 Tecnologias
-- HTML5
-- CSS3
+- HTML
+- CSS
 - JavaScript
 - Chart.js
 - GitHub Pages
+
+## Funcionalidades
+
+✔ Listagem de produtos  
+✔ Carrinho de compras  
+✔ Checkout simulado  
+✔ Persistência com LocalStorage  
+✔ Painel administrativo com métricas  
+✔ Dashboard com gráfico de vendas
+
+## Dashboard Admin
+
+O painel administrativo apresenta:
+
+- Receita total
+- Total de vendas
+- Produto mais vendido
+- Gráfico de vendas
+
+## Demonstração
+
+https://manu21avila.github.io/smartshop-ecommerce/
+
+## Autora
+
+Emanuelle Ávila
