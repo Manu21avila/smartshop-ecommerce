@@ -42,7 +42,7 @@ header {
 }
 
 header h1 {
-  color: white;
+  color: rgb(126, 126, 129);
   font-size: 22px;
 }
 
@@ -59,7 +59,7 @@ header input {
   background: #22c55e;
   padding: 8px 16px;
   border-radius: 8px;
-  color: white;
+  color: rgb(205, 205, 207);
   text-decoration: none;
   font-weight: 600;
 }
@@ -77,7 +77,7 @@ header input {
 }
 
 .hero p {
-  color: #666;
+  color: #ffffff;
 }
 
 /* FILTROS */
@@ -105,7 +105,7 @@ header input {
 /* CARD */
 
 .product-card {
-  background: white;
+  background: rgb(181, 185, 185);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -135,7 +135,7 @@ header input {
   margin-top: 12px;
   padding: 10px 14px;
   background: black;
-  color: white;
+  color: rgb(183, 184, 189);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -146,7 +146,7 @@ header input {
 footer {
   margin-top: 50px;
   background: #111;
-  color: white;
+  color: rgb(198, 203, 204);
   text-align: center;
   padding: 20px;
 }
@@ -164,7 +164,7 @@ footer {
 }
 
 .modal-content {
-  background: white;
+  background: rgb(191, 191, 192);
   padding: 30px;
   border-radius: 12px;
   width: 350px;
@@ -211,7 +211,7 @@ footer {
   top: 0;
   width: 350px;
   height: 100%;
-  background: white;
+  background: rgb(162, 162, 163);
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
   transition: 0.3s;
@@ -227,7 +227,7 @@ footer {
   bottom: 20px;
   right: 20px;
   background: #22c55e;
-  color: white;
+  color: rgb(174, 177, 180);
   padding: 12px 20px;
   border-radius: 8px;
   opacity: 0;
