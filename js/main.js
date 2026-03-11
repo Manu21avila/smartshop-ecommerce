@@ -1,50 +1,45 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function updateCartCount() {
-  document.getElementById("cart-count").innerText = cart.length;
+  const cartCount = document.getElementById("cart-count");
+  if (cartCount) {
+    cartCount.innerText = cart.length;
+  }
 }
 
 fetch("data/products.json")
   .then((res) => res.json())
   .then((products) => {
     displayProducts(products);
-
-    document.getElementById("search").addEventListener("input", (e) => {
-      const value = e.target.value.toLowerCase();
-
-      const filtered = products.filter((p) =>
-        p.name.toLowerCase().includes(value),
-      );
-
-      displayProducts(filtered);
-    });
-  });
+  })
+  .catch((err) => console.error("Erro ao carregar produtos:", err));
 
 function displayProducts(products) {
   const container = document.getElementById("products");
 
+  if (!container) return;
+
   container.innerHTML = "";
 
   products.forEach((product) => {
+    const div = document.createElement("div");
+
+    div.className = "product-card";
+
     div.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>R$ ${product.price.toFixed(2)}</p>
+      <button onclick="addToCart(${product.id})">
+        Adicionar ao Carrinho
+      </button>
+    `;
 
-<div class="product-card">
-
-<img src="${product.image}" alt="${product.name}">
-
-<h3>${product.name}</h3>
-
-<p>R$ ${product.price.toFixed(2)}</p>
-
-<button onclick="addToCart(${product.id})">
-Adicionar ao Carrinho
-</button>
-
-</div>
-
-`;
+    container.appendChild(div);
   });
 }
+
+updateCartCount();
 
 function addToCart(id) {
   fetch("data/products.json")
