@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <title>SmartShop</title>
 
     <link rel="stylesheet" href="css/styles.css" />
@@ -19,6 +23,8 @@
           🛒 Carrinho (<span id="cart-count">0</span>)
         </a>
       </div>
+
+      <button id="darkToggle">🌙</button>
     </header>
 
     <section class="hero container">
@@ -49,5 +55,29 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+    <div id="productModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <img id="modalImage" />
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalPrice"></p>
+
+        <button id="modalAdd">Adicionar ao Carrinho</button>
+      </div>
+    </div>
+
+    <div id="sideCart" class="side-cart">
+      <h3>Seu Carrinho</h3>
+
+      <div id="sideCartItems"></div>
+
+      <button onclick="goToCart()">Finalizar Compra</button>
+
+      <div id="toast">Produto adicionado ao carrinho</div>
+    </div>
   </body>
 </html>

@@ -4,7 +4,7 @@
     "name": "Smartphone Pro X",
     "price": 2499.9,
     "category": "tecnologia",
-    "image": "assets/phone.png"
+    "image": "imagens/smartphone.png"
   },
 
   {
@@ -12,7 +12,7 @@
     "name": "Notebook Ultra Slim",
     "price": 4599.9,
     "category": "tecnologia",
-    "image": "assets/notebook.png"
+    "image": "imagens/notebook.png"
   },
 
   {
@@ -20,7 +20,7 @@
     "name": "Tênis Casual Premium",
     "price": 299.9,
     "category": "moda",
-    "image": "assets/shoes.png"
+    "image": "imagens/tenis.png"
   },
 
   {
@@ -28,6 +28,6 @@
     "name": "Relógio Smartwatch",
     "price": 799.9,
     "category": "tecnologia",
-    "image": "assets/watch.png"
+    "image": "imagens/relogio.png"
   }
 ]
