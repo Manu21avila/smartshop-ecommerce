@@ -18,6 +18,7 @@ body {
 
 .product-card {
   border-radius: 16px;
+  transition: all 0.25s ease;
 }
 
 /* CONTAINER */
@@ -110,11 +111,12 @@ header input {
   padding: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
   text-align: center;
-  transition: 0.2s;
+  transition: all 0.25s ease;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .product-card img {
