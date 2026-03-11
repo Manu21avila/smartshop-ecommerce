@@ -7,7 +7,7 @@
 
 body {
   background: rgb(179, 199, 226);
-  color: #b9bfc5;
+  color: #000000;
   font-family: "Inter", sans-serif;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 header h1 {
-  color: rgb(198, 198, 201);
+  color: rgb(0, 0, 0);
   font-size: 22px;
 }
 
@@ -59,7 +59,7 @@ header input {
   background: #3fa866;
   padding: 8px 16px;
   border-radius: 8px;
-  color: lch(88.85% 0.53 290.35);
+  color: lch(0% 0 0);
   text-decoration: none;
   font-weight: 600;
 }
@@ -77,7 +77,7 @@ header input {
 }
 
 .hero p {
-  color: #a3a5af;
+  color: #000000;
 }
 
 /* FILTROS */
@@ -91,7 +91,7 @@ header input {
 .filters select {
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid #cccccc;
+  border: 1px solid #0e0e0e;
 }
 
 /* GRID */
@@ -227,7 +227,7 @@ footer {
   bottom: 20px;
   right: 20px;
   background: #46b66f;
-  color: rgb(201, 204, 206);
+  color: rgb(0, 0, 0);
   padding: 12px 20px;
   border-radius: 8px;
   opacity: 0;
