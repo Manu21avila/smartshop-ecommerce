@@ -27,32 +27,30 @@
       <button id="darkToggle">🌙</button>
     </header>
 
-    <main></main>
+    <main>
+      <section class="hero container">
+        <h2>SmartShop</h2>
+        <p>Uma experiência moderna de e-commerce construída com JavaScript</p>
+      </section>
 
-    <section class="hero container">
-      <h2>SmartShop</h2>
-      <p>Uma experiência moderna de e-commerce construída com JavaScript</p>
-    </section>
+      <section class="container">
+        <div class="filters">
+          <select id="categoryFilter">
+            <option value="all">Todas Categorias</option>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="moda">Moda</option>
+          </select>
 
-    <section class="container">
-      <div class="filters">
-        <select id="categoryFilter">
-          <option value="all">Todas Categorias</option>
-          <option value="tecnologia">Tecnologia</option>
-          <option value="moda">Moda</option>
-        </select>
+          <select id="sortFilter">
+            <option value="default">Ordenar por</option>
+            <option value="priceAsc">Menor preço</option>
+            <option value="priceDesc">Maior preço</option>
+          </select>
+        </div>
 
-        <select id="sortFilter">
-          <option value="default">Ordenar por</option>
-          <option value="priceAsc">Menor preço</option>
-          <option value="priceDesc">Maior preço</option>
-        </select>
-      </div>
-
-      <div id="products" class="products-grid"></div>
-    </section>
-
-  </main>
+        <div id="products" class="products-grid"></div>
+      </section>
+    </main>
 
     <footer>
       <p>© 2026 SmartShop - Projeto de Portfólio por Emanuelle Ávila</p>
