@@ -1,37 +1,22 @@
-# SmartShop 🛍️
+# SmartShop - Projeto de E-commerce
 
-Projeto de mini e-commerce desenvolvido para portfólio.
+Projeto de e-commerce desenvolvido com JavaScript puro para demonstração de habilidades front-end.
+
+## Funcionalidades
+
+- Listagem dinâmica de produtos
+- Carrinho com LocalStorage
+- Busca de produtos
+- Cupom de desconto
+- Cálculo de frete
+- Layout responsivo
 
 ## Tecnologias
 
 - HTML
 - CSS
 - JavaScript
-- Chart.js
-- GitHub Pages
 
-## Funcionalidades
+## Deploy
 
-✔ Listagem de produtos  
-✔ Carrinho de compras  
-✔ Checkout simulado  
-✔ Persistência com LocalStorage  
-✔ Painel administrativo com métricas  
-✔ Dashboard com gráfico de vendas
-
-## Dashboard Admin
-
-O painel administrativo apresenta:
-
-- Receita total
-- Total de vendas
-- Produto mais vendido
-- Gráfico de vendas
-
-## Demonstração
-
-https://manu21avila.github.io/smartshop-ecommerce/
-
-## Autora
-
-Emanuelle Ávila
+GitHub Pages

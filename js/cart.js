@@ -1,39 +1,55 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-// Atualiza contador no header
-function updateCartCount() {
-  const cartCount = document.getElementById("cartCount");
-  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-  if (cartCount) {
-    cartCount.textContent = totalItems;
-  }
-}
+const container = document.getElementById("cart-items");
 
-// Adicionar produto ao carrinho
-function addToCart(productId) {
-  const product = products.find((p) => p.id === productId);
+let subtotal = 0;
 
-  if (!product) return;
+cart.forEach((item, index) => {
+  subtotal += item.price;
 
-  const existingProduct = cart.find((item) => item.id === productId);
+  const div = document.createElement("div");
 
-  if (existingProduct) {
-    existingProduct.quantity++;
-  } else {
-    cart.push({
-      id: product.id,
-      name: product.name,
-      price: product.price,
-      image: product.image,
-      quantity: 1,
-    });
-  }
+  div.className = "cart-item";
+
+  div.innerHTML = `
+
+<img src="../${item.image}">
+
+<p>${item.name}</p>
+
+<p>R$ ${item.price}</p>
+
+<button onclick="removeItem(${index})">
+Remover
+</button>
+
+`;
+
+  container.appendChild(div);
+});
+
+document.getElementById("subtotal").innerText = subtotal;
+
+let shipping = 15;
+
+document.getElementById("total").innerText = subtotal + shipping;
+
+function removeItem(index) {
+  cart.splice(index, 1);
 
   localStorage.setItem("cart", JSON.stringify(cart));
-  updateCartCount();
 
-  alert("Produto adicionado ao carrinho!");
+  location.reload();
 }
 
-// Inicializa contador ao carregar página
-updateCartCount();
+function applyCoupon() {
+  const coupon = document.getElementById("coupon").value;
+
+  if (coupon === "SMART10") {
+    let discount = subtotal * 0.1;
+
+    document.getElementById("total").innerText = subtotal + shipping - discount;
+
+    alert("Cupom aplicado!");
+  }
+}

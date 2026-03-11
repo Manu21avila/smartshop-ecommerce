@@ -1,66 +1,53 @@
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SmartShop | Sua Loja Inteligente</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <script defer src="js/products.js"></script>
-    <script defer src="js/cart.js"></script>
+    <title>SmartShop</title>
 
-    <link rel="icon" href="images/favicon.png" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <!-- HEADER -->
-    <header class="header">
-      <button id="themeToggle" class="theme-btn">🌙</button>
-      <h1>🛍️ SmartShop</h1>
+    <header>
+      <div class="container header-content">
+        <h1>🛍 SmartShop</h1>
 
-      <div class="search-cart">
-        <input type="text" id="searchInput" placeholder="Buscar produto..." />
-        <a href="cart.html" class="cart-btn">
-          🛒 Carrinho <span id="cartCount">0</span>
+        <input type="text" id="search" placeholder="Buscar produto..." />
+
+        <a href="pages/cart.html" class="cart-btn">
+          🛒 Carrinho (<span id="cart-count">0</span>)
         </a>
       </div>
-
-      <div class="menu-toggle" id="menuToggle">☰</div>
     </header>
 
-    <section class="hero">
+    <section class="hero container">
       <h2>SmartShop</h2>
-
       <p>Uma experiência moderna de e-commerce construída com JavaScript</p>
     </section>
 
-    <!-- FILTROS -->
-    <section class="filters">
-      <select id="categoryFilter">
-        <option value="all">Todas Categorias</option>
-        <option value="eletronicos">Eletrônicos</option>
-        <option value="moda">Moda</option>
-        <option value="acessorios">Acessórios</option>
-      </select>
+    <section class="container">
+      <div class="filters">
+        <select id="categoryFilter">
+          <option value="all">Todas Categorias</option>
+          <option value="tecnologia">Tecnologia</option>
+          <option value="moda">Moda</option>
+        </select>
 
-      <select id="sortFilter">
-        <option value="default">Ordenar por</option>
-        <option value="price-asc">Menor Preço</option>
-        <option value="price-desc">Maior Preço</option>
-      </select>
+        <select id="sortFilter">
+          <option value="default">Ordenar por</option>
+          <option value="priceAsc">Menor preço</option>
+          <option value="priceDesc">Maior preço</option>
+        </select>
+      </div>
+
+      <div id="products" class="products-grid"></div>
     </section>
 
-    <!-- PRODUTOS -->
-    <main class="products-container" id="productsContainer">
-      <!-- Produtos serão inseridos via JavaScript -->
-    </main>
-
-    <!-- FOOTER -->
-    <footer class="footer">
+    <footer>
       <p>© 2026 SmartShop - Projeto de Portfólio por Emanuelle Ávila</p>
     </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho</title>
+
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-content">
+        <h1>🛍 SmartShop</h1>
+
+        <a href="../index.html" class="cart-btn">← Voltar para loja</a>
+      </div>
+    </header>
+
+    <section class="container cart-container">
+      <h2>Seu Carrinho</h2>
+
+      <div id="cart-items"></div>
+
+      <div class="cart-summary">
+        <p>Subtotal: R$ <span id="subtotal">0</span></p>
+        <p>Frete: R$ <span id="shipping">15</span></p>
+
+        <h3>Total: R$ <span id="total">0</span></h3>
+
+        <input id="coupon" placeholder="Cupom de desconto" />
+
+        <button onclick="applyCoupon()">Aplicar Cupom</button>
+
+        <button class="checkout">Finalizar Compra</button>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 SmartShop</p>
+    </footer>
+
+    <script src="../js/cart.js"></script>
+  </body>
+</html>
