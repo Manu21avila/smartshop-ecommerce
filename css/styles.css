@@ -7,7 +7,7 @@
 
 body {
   background: rgb(179, 199, 226);
-  color: #515458;
+  color: #b9bfc5;
   font-family: "Inter", sans-serif;
 }
 
@@ -31,7 +31,7 @@ body {
 /* HEADER */
 
 header {
-  background: #182544;
+  background: #364d81;
   padding: 15px 0;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 header h1 {
-  color: rgb(140, 140, 143);
+  color: rgb(198, 198, 201);
   font-size: 22px;
 }
 
@@ -56,10 +56,10 @@ header input {
 /* BOTÃO CARRINHO */
 
 .cart-btn {
-  background: #22c55e;
+  background: #3fa866;
   padding: 8px 16px;
   border-radius: 8px;
-  color: rgb(205, 205, 207);
+  color: lch(88.85% 0.53 290.35);
   text-decoration: none;
   font-weight: 600;
 }
@@ -135,7 +135,7 @@ header input {
   margin-top: 12px;
   padding: 10px 14px;
   background: black;
-  color: rgb(183, 184, 189);
+  color: rgb(208, 208, 211);
   border: none;
   border-radius: 6px;
   cursor: pointer;
@@ -164,7 +164,7 @@ footer {
 }
 
 .modal-content {
-  background: rgb(191, 191, 192);
+  background: rgb(176, 179, 190);
   padding: 30px;
   border-radius: 12px;
   width: 350px;
@@ -211,7 +211,7 @@ footer {
   top: 0;
   width: 350px;
   height: 100%;
-  background: rgb(196, 196, 197);
+  background: rgb(213, 213, 214);
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
   transition: 0.3s;
@@ -226,7 +226,7 @@ footer {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: #22c55e;
+  background: #46b66f;
   color: rgb(201, 204, 206);
   padding: 12px 20px;
   border-radius: 8px;
