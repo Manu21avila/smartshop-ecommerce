@@ -89,11 +89,15 @@ function showToast() {
 
 const toggle = document.getElementById("darkToggle");
 
-toggle.onclick = () => {
+toggle.addEventListener("click", () => {
   document.body.classList.toggle("dark");
 
-  localStorage.setItem("theme", document.body.classList.contains("dark"));
-};
+  if (document.body.classList.contains("dark")) {
+    toggle.innerHTML = "☀️";
+  } else {
+    toggle.innerHTML = "🌙";
+  }
+});
 
 if (localStorage.getItem("theme") === "true") {
   document.body.classList.add("dark");
