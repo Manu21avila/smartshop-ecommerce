@@ -26,7 +26,7 @@ function displayProducts(products) {
   container.innerHTML = "";
 
   products.forEach((product) => {
-    container.innerHTML += `
+    div.innerHTML = `
 
 <div class="product-card">
 
