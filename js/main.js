@@ -30,7 +30,7 @@ function displayProducts(products) {
 
 <div class="product-card">
 
-<img src="assets/${product.image}" alt="${product.name}">
+<img src="${product.image}" alt="${product.name}">
 
 <h3>${product.name}</h3>
 
@@ -104,11 +104,9 @@ if (localStorage.getItem("theme") === "true") {
   document.body.classList.add("dark");
 }
 
-document.getElementById("products").innerHTML =
-
-`
+document.getElementById("products").innerHTML = `
 <div class="skeleton"></div>
 <div class="skeleton"></div>
 <div class="skeleton"></div>
 <div class="skeleton"></div>
-`
+`;
