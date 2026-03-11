@@ -6,8 +6,8 @@
 }
 
 body {
-  background: #53586d;
-  color: #333;
+  background: rgb(179, 199, 226);
+  color: #515458;
   font-family: "Inter", sans-serif;
 }
 
@@ -31,7 +31,7 @@ body {
 /* HEADER */
 
 header {
-  background: #0f172a;
+  background: #182544;
   padding: 15px 0;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 header h1 {
-  color: rgb(126, 126, 129);
+  color: rgb(140, 140, 143);
   font-size: 22px;
 }
 
@@ -77,7 +77,7 @@ header input {
 }
 
 .hero p {
-  color: #ffffff;
+  color: #a3a5af;
 }
 
 /* FILTROS */
@@ -91,7 +91,7 @@ header input {
 .filters select {
   padding: 8px;
   border-radius: 6px;
-  border: 1px solid #ccc;
+  border: 1px solid #cccccc;
 }
 
 /* GRID */
@@ -105,7 +105,7 @@ header input {
 /* CARD */
 
 .product-card {
-  background: rgb(181, 185, 185);
+  background: rgb(196, 201, 201);
   border-radius: 12px;
   padding: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
@@ -211,7 +211,7 @@ footer {
   top: 0;
   width: 350px;
   height: 100%;
-  background: rgb(162, 162, 163);
+  background: rgb(196, 196, 197);
   box-shadow: -4px 0 20px rgba(0, 0, 0, 0.2);
   padding: 20px;
   transition: 0.3s;
@@ -227,7 +227,7 @@ footer {
   bottom: 20px;
   right: 20px;
   background: #22c55e;
-  color: rgb(174, 177, 180);
+  color: rgb(201, 204, 206);
   padding: 12px 20px;
   border-radius: 8px;
   opacity: 0;
