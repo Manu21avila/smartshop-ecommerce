@@ -51,4 +51,4 @@ Este projeto foi desenvolvido para demonstrar habilidades em:
 
 ## 👩‍💻 Autora
 
-Emanuelle Ávila
+Emanuelle Ávila Bairros
